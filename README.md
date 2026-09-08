@@ -60,8 +60,9 @@ Visit `http://localhost:5173` in your browser.
 
 ---
 
-## 📄 Educational Disclaimer
+## 📜 License
 
-This application is developed for educational assistance and self-assessment only. Always verify final GPA, CGPA, and degree classification against official grade sheets issued by the MSEC Controller of Examinations or Anna University Gazette.
+This project is licensed under the [MIT License](LICENSE).
 
 © 2026 MSEC GPA & CGPA Calculator.
+
