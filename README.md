@@ -1,16 +1,67 @@
-# React + Vite
+# 🎓 MSEC & Anna University Automatic GPA & CGPA Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **Production-Quality, Responsive Web Application built for Meenakshi Sundararajan Engineering College (MSEC Autonomous) & Anna University (R2024, R2023, R2025)**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Product Features
 
-## React Compiler
+- **Zero Manual Credit Input**: Students select Institution $\rightarrow$ Regulation $\rightarrow$ Programme $\rightarrow$ Semester. Official course codes, titles, categories, and credits load automatically. The credit column is read-only.
+- **Config-Driven Regulation Engine**: Decoupled calculation services supporting:
+  - **MSEC Autonomous — R2024**
+  - **Anna University — R2023**
+  - **Anna University — R2025**
+- **Verified Syllabus Datasets**:
+  - **MSEC R2024 B.E. Mechanical Engineering** (All 8 Semesters, 169.0 Credits)
+  - **MSEC R2024 B.E. Civil Engineering** (All 8 Semesters, 172.0 Credits)
+  - **MSEC R2024 & AU R2023 CSE, ECE, EEE, IT, AI & DS**
+- **Credit-Weighted CGPA Accumulator**: Computes mathematically accurate credit-weighted CGPA across all saved semester records.
+- **"What If I Get..." Grade Simulator**: Test hypothetical grade combinations with real-time projected GPA & CGPA updates.
+- **🎯 Target CGPA Planner**: Calculates required average future GPA for remaining credits with mathematical feasibility status (*Achievable*, *Very Difficult*, *Mathematically Impossible*).
+- **Export & Sharing**: Download PDF transcript report, export CSV spreadsheet, copy text summary snippet for WhatsApp/SMS.
+- **100% Local & Confidential**: All calculations execute locally in the browser with `localStorage` state persistence and full offline PWA support.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Frontend Framework**: React 19 + Vite 8
+- **Styling**: Tailwind CSS v4 + Glassmorphism Dark UI
+- **Icons & Visuals**: Lucide React
+- **Charting**: Recharts
+- **PDF Generation**: jsPDF
+- **PWA**: Web App Manifest & Service Worker
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js v18+ and `npm`
+
+### Installation & Execution
+
+```bash
+# Clone the repository
+git clone https://github.com/Monishwarann/CGPACalculator.git
+
+# Navigate into project directory
+cd CGPACalculator
+
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+```
+
+Visit `http://localhost:5173` in your browser.
+
+---
+
+## 📄 Educational Disclaimer
+
+This application is developed for educational assistance and self-assessment only. Always verify final GPA, CGPA, and degree classification against official grade sheets issued by the MSEC Controller of Examinations or Anna University Gazette.
+
+© 2026 MSEC GPA & CGPA Calculator.
