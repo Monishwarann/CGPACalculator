@@ -582,33 +582,36 @@ export const CURRICULUM_DATA = {
       6: {
         verified: true,
         courses: [
-          { code: "U24IT601", name: "Mobile Computing & Applications", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "U24IT602", name: "Cloud Computing Architectures", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24IT601", name: "Full Stack Web Development", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC613", name: "Integrated Disaster Management", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24CS601", name: "Object Oriented Software Engineering", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24IT603", name: "Embedded Systems and IOT", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
           { code: "PE24601", name: "Professional Elective III", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
           { code: "PE24602", name: "Professional Elective IV", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "OE24601", name: "Open Elective II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24IT602", name: "Full Stack Web Development Laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM612", name: "Ethics Data Collection, Analysis and Interpretation", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
           { code: "U24TP610", name: "Employability Skills & Problem Solving Techniques", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
-          { code: "U24ED611", name: "Building a Business Model, GTM & Startup Journey", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
-          { code: "U24RM612", name: "Technical Writing And Research Ethics", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
-          { code: "U24MC613", name: "Integrated Disaster Management", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
+          { code: "U24ED611", name: "Business Management - Go To Market & Start-up Journey", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       7: {
         verified: true,
         courses: [
-          { code: "U24IT701", name: "Information Security", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24IT701", name: "Wireless Networks", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24701", name: "Open Elective - II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24702", name: "Open Elective - III", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MG701", name: "Engineering Economics and Finance Management", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC713", name: "Constitution of India", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
           { code: "PE24701", name: "Professional Elective V", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
           { code: "PE24702", name: "Professional Elective VI", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "OE24701", name: "Open Elective III", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "U24IT702", name: "Project Work Phase I / Industrial Internship", credits: 3, type: "Project", includedInGPA: true, includedInCGPA: true },
-          { code: "U24RM712", name: "Data Collection, Analysis And Interpretation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
-          { code: "U24MC713", name: "Constitution of India", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
+          { code: "U24IT702", name: "Summer Internship*", credits: 1, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM712", name: "Technical Writing and Research", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       8: {
         verified: true,
         courses: [
-          { code: "U24IT801", name: "Project Work Phase II / Major Project", credits: 8, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24IT801", name: "Project Work", credits: 8, type: "Project", includedInGPA: true, includedInCGPA: true }
         ]
       }
     },
