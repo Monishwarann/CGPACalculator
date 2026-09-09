@@ -1,5 +1,6 @@
 import React from "react";
-import { Award, TrendingUp, Percent, CheckCircle, AlertCircle, Share2, FileText, Download } from "lucide-react";
+import { motion } from "framer-motion";
+import { Award, TrendingUp, Percent, CheckCircle, AlertCircle, Share2, FileText, Download, BookmarkPlus } from "lucide-react";
 
 export default function ResultDashboard({
   isDarkMode,
@@ -15,159 +16,206 @@ export default function ResultDashboard({
   const getClassificationBadgeColor = (color) => {
     switch (color) {
       case "emerald":
-        return "bg-emerald-500/10 text-emerald-400 border-emerald-500/30";
+        return "bg-emerald-500/15 text-emerald-400 border-emerald-500/40 shadow-sm shadow-emerald-500/10";
       case "blue":
-        return "bg-blue-500/10 text-blue-400 border-blue-500/30";
+        return "bg-blue-500/15 text-blue-400 border-blue-500/40 shadow-sm shadow-blue-500/10";
       case "amber":
-        return "bg-amber-500/10 text-amber-400 border-amber-500/30";
+        return "bg-amber-500/15 text-amber-400 border-amber-500/40 shadow-sm shadow-amber-500/10";
       case "rose":
-        return "bg-rose-500/10 text-rose-400 border-rose-500/30";
+        return "bg-rose-500/15 text-rose-400 border-rose-500/40 shadow-sm shadow-rose-500/10";
       default:
-        return "bg-indigo-500/10 text-indigo-400 border-indigo-500/30";
+        return "bg-indigo-500/15 text-indigo-400 border-indigo-500/40 shadow-sm shadow-indigo-500/10";
     }
   };
 
   return (
-    <div className="space-y-6">
+    <motion.div 
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.3 }}
+      className="space-y-6"
+    >
       
-      {/* KPI Cards Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* 4 Premium KPI Stat Glass Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
-        {/* Semester GPA */}
-        <div className={`p-5 rounded-2xl border transition-all ${
-          isDarkMode
-            ? "bg-gradient-to-br from-indigo-900/30 to-[#0d1422] border-indigo-500/30 shadow-lg shadow-indigo-950/40"
-            : "bg-gradient-to-br from-indigo-50 to-white border-indigo-200 shadow-md shadow-indigo-100"
-        }`}>
-          <div className="flex items-center justify-between text-indigo-400 mb-2">
-            <span className="text-xs font-bold uppercase tracking-wider">Semester GPA</span>
-            <Award className="w-5 h-5" />
+        {/* Card 1: Semester GPA */}
+        <motion.div 
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ duration: 0.2 }}
+          className={`p-6 rounded-3xl border transition-all duration-300 relative overflow-hidden ${
+            isDarkMode
+              ? "bg-gradient-to-br from-indigo-950/60 via-[#0d1422] to-[#060912] border-indigo-500/40 shadow-xl shadow-indigo-950/30"
+              : "bg-gradient-to-br from-indigo-50/90 via-white to-indigo-50/30 border-indigo-200 shadow-lg shadow-indigo-500/5"
+          }`}
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-500/15 rounded-full blur-xl pointer-events-none" />
+          <div className="flex items-center justify-between text-indigo-400 mb-3">
+            <span className="text-xs font-extrabold uppercase tracking-wider">Semester GPA</span>
+            <div className="p-2 rounded-xl bg-indigo-500/15 border border-indigo-500/30">
+              <Award className="w-5 h-5" />
+            </div>
           </div>
-          <div className="text-3xl sm:text-4xl font-extrabold font-mono tracking-tight text-indigo-400">
+          <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-indigo-400 my-1">
             {gpaResult.gpaFormatted}
           </div>
-          <div className="text-[11px] text-slate-400 mt-2 flex items-center justify-between">
+          <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-indigo-500/15">
             <span>Range: 0.00 – 10.00</span>
-            <span>{gpaResult.passedCoursesCount} Passed</span>
+            <span className="text-indigo-300">{gpaResult.passedCoursesCount} Passed</span>
           </div>
-        </div>
+        </motion.div>
 
-        {/* CGPA */}
-        <div className={`p-5 rounded-2xl border transition-all ${
-          isDarkMode
-            ? "bg-gradient-to-br from-violet-900/30 to-[#0d1422] border-violet-500/30 shadow-lg shadow-violet-950/40"
-            : "bg-gradient-to-br from-violet-50 to-white border-violet-200 shadow-md shadow-violet-100"
-        }`}>
-          <div className="flex items-center justify-between text-violet-400 mb-2">
-            <span className="text-xs font-bold uppercase tracking-wider">Cumulative CGPA</span>
-            <TrendingUp className="w-5 h-5" />
+        {/* Card 2: Cumulative CGPA */}
+        <motion.div 
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ duration: 0.2 }}
+          className={`p-6 rounded-3xl border transition-all duration-300 relative overflow-hidden ${
+            isDarkMode
+              ? "bg-gradient-to-br from-violet-950/60 via-[#0d1422] to-[#060912] border-violet-500/40 shadow-xl shadow-violet-950/30"
+              : "bg-gradient-to-br from-violet-50/90 via-white to-violet-50/30 border-violet-200 shadow-lg shadow-violet-500/5"
+          }`}
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 bg-violet-500/15 rounded-full blur-xl pointer-events-none" />
+          <div className="flex items-center justify-between text-violet-400 mb-3">
+            <span className="text-xs font-extrabold uppercase tracking-wider">Cumulative CGPA</span>
+            <div className="p-2 rounded-xl bg-violet-500/15 border border-violet-500/30">
+              <TrendingUp className="w-5 h-5" />
+            </div>
           </div>
-          <div className="text-3xl sm:text-4xl font-extrabold font-mono tracking-tight text-violet-400">
+          <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-violet-400 my-1">
             {cgpaResult.cgpaFormatted}
           </div>
-          <div className="text-[11px] text-slate-400 mt-2 flex items-center justify-between">
+          <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-violet-500/15">
             <span>Credit Weighted</span>
-            <span>{cgpaResult.totalCumulativeCredits} Cum. Credits</span>
+            <span className="text-violet-300">{cgpaResult.totalCumulativeCredits} Cum. Cr</span>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Percentage */}
-        <div className={`p-5 rounded-2xl border transition-all ${
-          isDarkMode
-            ? "bg-gradient-to-br from-purple-900/30 to-[#0d1422] border-purple-500/30 shadow-lg shadow-purple-950/40"
-            : "bg-gradient-to-br from-purple-50 to-white border-purple-200 shadow-md shadow-purple-100"
-        }`}>
-          <div className="flex items-center justify-between text-purple-400 mb-2">
-            <span className="text-xs font-bold uppercase tracking-wider">Percentage</span>
-            <Percent className="w-5 h-5" />
+        {/* Card 3: Marks Percentage */}
+        <motion.div 
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ duration: 0.2 }}
+          className={`p-6 rounded-3xl border transition-all duration-300 relative overflow-hidden ${
+            isDarkMode
+              ? "bg-gradient-to-br from-purple-950/60 via-[#0d1422] to-[#060912] border-purple-500/40 shadow-xl shadow-purple-950/30"
+              : "bg-gradient-to-br from-purple-50/90 via-white to-purple-50/30 border-purple-200 shadow-lg shadow-purple-500/5"
+          }`}
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/15 rounded-full blur-xl pointer-events-none" />
+          <div className="flex items-center justify-between text-purple-400 mb-3">
+            <span className="text-xs font-extrabold uppercase tracking-wider">Percentage</span>
+            <div className="p-2 rounded-xl bg-purple-500/15 border border-purple-500/30">
+              <Percent className="w-5 h-5" />
+            </div>
           </div>
-          <div className="text-3xl sm:text-4xl font-extrabold font-mono tracking-tight text-purple-400">
+          <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-purple-400 my-1">
             {percentageResult.percentageFormatted}
           </div>
-          <div className="text-[11px] text-slate-400 mt-2 truncate">
+          <div className="text-[11px] font-bold text-slate-400 mt-3 truncate pt-2 border-t border-purple-500/15">
             {percentageResult.formulaText}
           </div>
-        </div>
+        </motion.div>
 
-        {/* Total Earned Credits */}
-        <div className={`p-5 rounded-2xl border transition-all ${
-          isDarkMode
-            ? "bg-gradient-to-br from-emerald-900/30 to-[#0d1422] border-emerald-500/30 shadow-lg shadow-emerald-950/40"
-            : "bg-gradient-to-br from-emerald-50 to-white border-emerald-200 shadow-md shadow-emerald-100"
-        }`}>
-          <div className="flex items-center justify-between text-emerald-400 mb-2">
-            <span className="text-xs font-bold uppercase tracking-wider">Credits Earned</span>
-            <CheckCircle className="w-5 h-5" />
+        {/* Card 4: Credits Earned */}
+        <motion.div 
+          whileHover={{ y: -4, scale: 1.01 }}
+          transition={{ duration: 0.2 }}
+          className={`p-6 rounded-3xl border transition-all duration-300 relative overflow-hidden ${
+            isDarkMode
+              ? "bg-gradient-to-br from-emerald-950/60 via-[#0d1422] to-[#060912] border-emerald-500/40 shadow-xl shadow-emerald-950/30"
+              : "bg-gradient-to-br from-emerald-50/90 via-white to-emerald-50/30 border-emerald-200 shadow-lg shadow-emerald-500/5"
+          }`}
+        >
+          <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/15 rounded-full blur-xl pointer-events-none" />
+          <div className="flex items-center justify-between text-emerald-400 mb-3">
+            <span className="text-xs font-extrabold uppercase tracking-wider">Credits Earned</span>
+            <div className="p-2 rounded-xl bg-emerald-500/15 border border-emerald-500/30">
+              <CheckCircle className="w-5 h-5" />
+            </div>
           </div>
-          <div className="text-3xl sm:text-4xl font-extrabold font-mono tracking-tight text-emerald-400">
-            {gpaResult.totalCreditsEarned} <span className="text-sm font-normal text-slate-400">/ {gpaResult.totalCreditsRegistered}</span>
+          <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-emerald-400 my-1">
+            {gpaResult.totalCreditsEarned} <span className="text-base font-bold text-slate-400">/ {gpaResult.totalCreditsRegistered}</span>
           </div>
-          <div className="text-[11px] text-slate-400 mt-2 flex items-center justify-between">
-            <span>Registered: {gpaResult.totalCreditsRegistered} Cr</span>
+          <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-emerald-500/15">
+            <span>Reg: {gpaResult.totalCreditsRegistered} Cr</span>
             {gpaResult.failedCoursesCount > 0 ? (
-              <span className="text-rose-400 font-bold">{gpaResult.failedCoursesCount} Arrear(s)</span>
+              <span className="text-rose-400 font-extrabold">{gpaResult.failedCoursesCount} Arrear(s)</span>
             ) : (
-              <span className="text-emerald-400">0 Arrears</span>
+              <span className="text-emerald-400 font-bold">0 Arrears</span>
             )}
           </div>
-        </div>
+        </motion.div>
 
       </div>
 
       {/* Academic Performance & Classification Banner */}
-      <div className={`p-6 rounded-2xl border flex flex-col md:flex-row items-start md:items-center justify-between gap-4 ${
-        isDarkMode ? "bg-[#0d1422] border-slate-800" : "bg-white border-slate-200 shadow-lg shadow-slate-100"
+      <div className={`p-6 sm:p-7 rounded-3xl border flex flex-col md:flex-row items-start md:items-center justify-between gap-5 transition-all duration-300 ${
+        isDarkMode 
+          ? "bg-[#0c1322]/80 backdrop-blur-xl border-slate-800/90 shadow-2xl shadow-black/50" 
+          : "bg-white/90 backdrop-blur-xl border-slate-200/90 shadow-xl shadow-slate-200/30"
       }`}>
-        <div className="space-y-1">
-          <div className="flex items-center space-x-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Academic Performance Classification</span>
-            <span className={`px-3 py-1 rounded-full text-xs font-extrabold border ${getClassificationBadgeColor(classificationResult.color)}`}>
+        <div className="space-y-2">
+          <div className="flex flex-wrap items-center gap-2.5">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-slate-400">
+              Academic Performance Classification
+            </span>
+            <span className={`px-3.5 py-1 rounded-full text-xs font-black border ${getClassificationBadgeColor(classificationResult.color)}`}>
               {classificationResult.label}
             </span>
           </div>
-          <p className={`text-sm ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+          <p className={`text-sm font-semibold ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>
             {classificationResult.description}
           </p>
-          <p className="text-[11px] text-slate-400 italic pt-1 max-w-2xl">
+          <p className="text-[11px] text-slate-400 font-medium italic max-w-2xl">
             {classificationResult.disclaimer}
           </p>
         </div>
 
         {/* Action Buttons Toolbar */}
-        <div className="flex items-center space-x-2 flex-wrap gap-y-2 w-full md:w-auto shrink-0">
-          <button
+        <div className="flex items-center space-x-2.5 flex-wrap gap-y-2 w-full md:w-auto shrink-0">
+          <motion.button
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
             onClick={onSaveSemester}
-            className="flex-1 md:flex-none px-4 py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-500/25 hover:from-indigo-500 hover:to-violet-500 transition"
+            className="flex-1 md:flex-none px-5 py-3 rounded-2xl font-extrabold text-xs bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition flex items-center justify-center space-x-1.5"
           >
-            Save Semester Result
-          </button>
+            <BookmarkPlus className="w-4 h-4" />
+            <span>Save Semester Result</span>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={onExportPDF}
-            className="p-2.5 rounded-xl font-semibold text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition"
+            className="p-3 rounded-2xl font-bold text-xs bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700 transition shadow-sm"
             title="Download PDF Report"
           >
             <FileText className="w-4 h-4" />
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={onExportCSV}
-            className="p-2.5 rounded-xl font-semibold text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition"
+            className="p-3 rounded-2xl font-bold text-xs bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700 transition shadow-sm"
             title="Download CSV Spreadsheet"
           >
             <Download className="w-4 h-4" />
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={onShareText}
-            className="p-2.5 rounded-xl font-semibold text-xs bg-slate-800 hover:bg-slate-700 text-indigo-400 border border-slate-700 transition"
-            title="Copy Text Summary"
+            className="p-3 rounded-2xl font-bold text-xs bg-slate-800/80 hover:bg-slate-700/80 text-indigo-400 border border-slate-700 transition shadow-sm"
+            title="Copy Text Summary to Clipboard"
           >
             <Share2 className="w-4 h-4" />
-          </button>
+          </motion.button>
         </div>
       </div>
 
-    </div>
+    </motion.div>
   );
 }
+
