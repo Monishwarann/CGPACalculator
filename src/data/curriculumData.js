@@ -305,27 +305,35 @@ export const CURRICULUM_DATA = {
       6: {
         verified: true,
         courses: [
-          { code: "EC24611", name: "Antennas and Microwave Engineering", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EC24612", name: "Optical Communication & Networks", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "PE24621", name: "Professional Elective II (5G / 6G Communications)", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "OE24621", name: "Open Elective II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "EC24621", name: "Advanced Communication Systems Lab", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
-          { code: "EC24631", name: "Mini Project / Design Project", credits: 2, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "OE24601", name: "Open Elective I", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24601", name: "Professional Elective IV", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24602", name: "Professional Elective V", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24603", name: "Professional Elective VI", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC601", name: "Embedded Systems and IOT Design", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC602", name: "Networks & Security", credits: 3, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM612", name: "Technical Writing and Research Ethics", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP610", name: "Employability Skills & Problem Solving Techniques", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED611", name: "Business Management - Go To Market & Start-up Journey", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC613", name: "Integrated Disaster Management", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
         ]
       },
       7: {
         verified: true,
         courses: [
-          { code: "EC24711", name: "Satellite Communication & Radar Systems", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "PE24721", name: "Professional Elective III (Robotics & Automation)", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "PE24722", name: "Professional Elective IV (Medical Electronics)", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
-          { code: "EC24731", name: "Project Work Phase I", credits: 3, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "OE24701", name: "Open Elective II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24702", name: "Open Elective III", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC713", name: "Constitution Of India", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24MG701", name: "Engineering Economics and Finance Management", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC701", name: "Microwave and Optical Communication", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC702", name: "Artificial Intelligence and Machine learning", credits: 3, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ME703", name: "Summer Internship*", credits: 1, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM712", name: "Data Collection, Analysis and Interpretation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       8: {
         verified: true,
         courses: [
-          { code: "EC24831", name: "Project Work Phase II", credits: 10, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24ME801", name: "Project Work", credits: 8, type: "Project", includedInGPA: true, includedInCGPA: true }
         ]
       }
     },
