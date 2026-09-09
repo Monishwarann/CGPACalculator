@@ -694,59 +694,115 @@ export const CURRICULUM_DATA = {
       1: {
         verified: true,
         courses: [
-          { code: "HS24111", name: "Technical English", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "MA24112", name: "Linear Algebra & Matrices", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24113", name: "Python Programming for Data Science", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24121", name: "Python for Data Science Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24IP101", name: "Induction Program - Universal Human Values", credits: 0, type: "Value Added Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EN101", name: "Technical English", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MA101", name: "Mathematical Foundation for Engineers", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24PH102", name: "Physics for Information Science I", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CY102", name: "Chemistry for Information Science", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TA101", name: "தமிழர்மரபு / Heritage of Tamils", credits: 1, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CS101", name: "Programming in C", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CE102", name: "Engineering Graphics and Computer Application", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ME101", name: "Engineering Practices Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP110", name: "Communication Skill Lab - I", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED111", name: "Design Thinking - Building Innovation & Solutioning Mindset", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       2: {
         verified: true,
         courses: [
-          { code: "MA24212", name: "Calculus & Optimization Techniques", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24213", name: "Data Structures & Algorithms for AI", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24IP201", name: "Value Added Course – II (Biology for AI Engineers)", credits: 0, type: "Value Added Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EN201", name: "Professional English", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MA202", name: "Probability and Statistics", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24PH202", name: "Physics for Information Science II", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TA201", name: "தமிழரும் தொழில்நுட்பமும் / Tamils and Technology", credits: 1, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC202", name: "Basics of Electrical and Electronics Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CY201", name: "Green and Sustainable Chemistry", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CS201", name: "Python Programming", credits: 4.5, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24BS101", name: "Physics and Chemistry Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP210", name: "Communication Skill Lab – II", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED211", name: "Design Thinking - Decoding Innovation Opportunity", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       3: {
         verified: true,
         courses: [
-          { code: "MA24311", name: "Probability & Statistics for AI", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24312", name: "Foundations of Artificial Intelligence", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24313", name: "Database Engineering & SQL", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24MA302", name: "Discrete Mathematics", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD301", name: "Fundamentals of Data Science and Analytics", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC313", name: "Foreign Language (Japanese / French / German)", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24AD302", name: "OOPS and Data Structures Design", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD303", name: "Database Design and Management", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EC310", name: "Digital Principles and Computer Organization", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD304", name: "Data Science and Analytics Laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP310", name: "General Aptitude & Logical Reasoning", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED311", name: "Innovation Tool Kits", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM312", name: "Introduction To Problem Solving", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       4: {
         verified: true,
         courses: [
-          { code: "AD24411", name: "Machine Learning Algorithms", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24412", name: "Data Warehousing & Visualization", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24MA402", name: "Linear Algebra and Numerical Methods", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD401", name: "Artificial Intelligence", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD402", name: "Machine Learning", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC413", name: "Indological Studies", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24AD403", name: "Introduction to Operating Systems", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD404", name: "Data Exploration and Visualization", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD405", name: "Artificial Intelligence Laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD406", name: "Machine Learning Laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP410", name: "Critical and Creative Thinking Skills", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED411", name: "Idea and Simulation Lab", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM412", name: "Hypothesis", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       5: {
         verified: true,
         courses: [
-          { code: "AD24511", name: "Deep Learning Foundations", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24512", name: "Computer Vision & Image Processing", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24AD501", name: "Deep Learning", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24501", name: "Open Elective I", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD502", name: "Big Data Analytics", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD503", name: "Introduction to Java Programming", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24501", name: "Professional Elective I", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24502", name: "Professional Elective II", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD504", name: "Deep Learning Lab", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD505", name: "Summer Internship*", credits: 1, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP510", name: "Analytical and Logical Thinking Skills", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED511", name: "Prototype & Market Validation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM512", name: "Domain Specific Experiments / Methodology / Algorithms", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC513", name: "Fitness for Life-Yoga, Food Nutrition", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
         ]
       },
       6: {
         verified: true,
         courses: [
-          { code: "AD24611", name: "Natural Language Processing", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24612", name: "Reinforcement Learning & AI Ethics", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24CS503", name: "Theory of Computation", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24601", name: "Open Elective II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC613", name: "Integrated Disaster management", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24IT602", name: "Embedded Systems and IOT", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD601", name: "Network Essentials", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24601", name: "Professional Elective III", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24602", name: "Professional Elective IV", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP610", name: "Employability Skills & Problem-Solving Techniques", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED611", name: "Building a Business Model, GTM & Startup Journey", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM612", name: "Technical Writing and Research Ethics", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       7: {
         verified: true,
         courses: [
-          { code: "AD24711", name: "Generative AI & LLM Systems", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "AD24731", name: "AI Capstone Project Phase I", credits: 3, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24AD701", name: "Information Security", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MG701", name: "Engineering Economics and Finance Management", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24701", name: "Open Elective – III", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC713", name: "Constitution of India", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "PE24701", name: "Professional Elective V", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24702", name: "Professional Elective VI", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24AD702", name: "Summer Internship*", credits: 1, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM712", name: "Data Collection, Analysis, and Interpretation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       8: {
         verified: true,
         courses: [
-          { code: "AD24831", name: "AI Capstone Project Phase II", credits: 10, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24AD801", name: "Project Work", credits: 8, type: "Project", includedInGPA: true, includedInCGPA: true }
         ]
       }
     }
