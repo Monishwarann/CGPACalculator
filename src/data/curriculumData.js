@@ -312,71 +312,111 @@ export const CURRICULUM_DATA = {
       1: {
         verified: true,
         courses: [
-          { code: "HS24111", name: "Technical English", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "MA24112", name: "Matrices and Calculus", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "PH24113", name: "Physics for Electrical Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "CY24114", name: "Chemistry for Electrical Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "GE24115", name: "Python Programming", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24121", name: "Electrical Circuits Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24IP101", name: "Induction Program - Universal Human Values", credits: 0, type: "Value Added Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EN101", name: "Technical English", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MA101", name: "Mathematical Foundation for Engineers", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24PH104", name: "Physics for Electrical Engineering - I", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CY103", name: "Chemistry for Electrical and Electronics Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TA101", name: "தமிழர்மரபு / Heritage of Tamils", credits: 1, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ME104", name: "Basic Civil and Mechanical Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CS101", name: "Programming in C", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24BS101", name: "Physics and Chemistry Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP110", name: "Communication Skills Laboratory-I", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED111", name: "Design Thinking - Building Innovation & Solutioning Mindset", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       2: {
         verified: true,
         courses: [
-          { code: "HS24211", name: "Professional Communication", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "MA24212", name: "Differential Equations and Vector Calculus", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24213", name: "Electric Circuit Analysis", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24214", name: "Electron Devices and Circuits", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24221", name: "Electric Machines Laboratory I", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24IP201", name: "Value Added Course – II (Biology for Engineers)", credits: 0, type: "Value Added Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EN201", name: "Professional English", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MA204", name: "Mathematics for Electrical Engineering", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TA201", name: "தமிழரும் தொழில்நுட்பமும் / Tamils and Technology", credits: 1, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24PH204", name: "Physics for Electrical Engineering -II", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CY201", name: "Green and Sustainable Chemistry", credits: 2, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CS201", name: "Python Programming", credits: 4.5, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CE204", name: "Engineering Graphics for Electrical and Electronics Engineering", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ME101", name: "Engineering Practices Laboratory", credits: 2, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP210", name: "Communication Skills Laboratory-II", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED211", name: "Design Thinking - Decoding Innovation Opportunity", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       3: {
         verified: true,
         courses: [
-          { code: "MA24315", name: "Numerical Methods & Transform Techniques", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24311", name: "Electrical Machines I", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24312", name: "Electromagnetic Theory", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24313", name: "Analog Electronics", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24321", name: "Electrical Machines Lab I", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24MA304", name: "Transforms and Partial Differential Equations", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE301", name: "Electrical Machines -I", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC313", name: "Foreign Language (Japanese/French)", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EE302", name: "Electron Devices and Circuit", credits: 4.5, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24CS308", name: "Data Structure", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE303", name: "Circuit Analysis", credits: 4.5, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE304", name: "Electrical Machines -I Laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP310", name: "General Aptitude & Logical Reasoning", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED311", name: "Innovation Tool Kits", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM312", name: "Introduction to Problem Solving", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       4: {
         verified: true,
         courses: [
-          { code: "EE24411", name: "Electrical Machines II", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24412", name: "Transmission and Distribution", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24413", name: "Measurements & Instrumentation", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24421", name: "Electrical Machines Lab II", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24MA402", name: "Linear Algebra and Numerical Methods", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE401", name: "Electromagnetic Theory", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE402", name: "Digital Logic Circuits", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE403", name: "Electrical Machines - II", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC413", name: "Indological studies", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24EE404", name: "Integrated Circuits", credits: 4.5, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE405", name: "Electrical Machines - II laboratory", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP410", name: "Critical and Creative Thinking Skills", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED411", name: "Idea and Simulation Lab", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM412", name: "Hypothesis", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       5: {
         verified: true,
         courses: [
-          { code: "EE24511", name: "Power Electronics", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24512", name: "Control Systems", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24513", name: "Microprocessors & Microcontrollers", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24521", name: "Power Electronics Lab", credits: 1.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
+          { code: "U24EE501", name: "Transmission and Distribution", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE502", name: "Measurements and Instrumentation", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24501", name: "Professional Elective I", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24502", name: "Professional Elective II", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE503", name: "Microprocessor and Microcontroller", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE504", name: "Control Systems", credits: 4, type: "Theory Cum Practical", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP510", name: "Analytical and Logical Thinking Skills", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE505", name: "Summer Internship*", credits: 1, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM512", name: "Domain Specific Experiments /Methodology/Algorithms", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC513", name: "Fitness for Life-Yoga, Food nutrition", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false },
+          { code: "U24ED511", name: "Prototype & Market Validation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true }
         ]
       },
       6: {
         verified: true,
         courses: [
-          { code: "EE24611", name: "Power System Analysis", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24612", name: "Solid State Drives", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24631", name: "Mini Project Work", credits: 2, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24EE601", name: "Power System Analysis", credits: 4, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE602", name: "Solid State Drives", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24601", name: "Professional Elective III", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24602", name: "Professional Elective IV", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24601", name: "Open Elective II", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24TP610", name: "Employability Skills & Problem Solving Techniques", credits: 1, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24ED611", name: "Building a Business Model, GTM & Startup Journey", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM612", name: "Technical Writing And Research Ethics", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC613", name: "Integrated Disaster Management", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
         ]
       },
       7: {
         verified: true,
         courses: [
-          { code: "EE24711", name: "High Voltage Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
-          { code: "EE24731", name: "Project Work Phase I", credits: 3, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24EE701", name: "High Voltage Engineering", credits: 3, type: "Theory", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24701", name: "Professional Elective V", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "PE24702", name: "Professional Elective VI", credits: 3, type: "Professional Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "OE24701", name: "Open Elective III", credits: 3, type: "Open Elective", includedInGPA: true, includedInCGPA: true },
+          { code: "U24EE702", name: "Project Work Phase I / Industrial Internship", credits: 3, type: "Project", includedInGPA: true, includedInCGPA: true },
+          { code: "U24RM712", name: "Data Collection, Analysis And Interpretation", credits: 0.5, type: "Laboratory", includedInGPA: true, includedInCGPA: true },
+          { code: "U24MC713", name: "Constitution of India", credits: 0, type: "Mandatory Course", includedInGPA: false, includedInCGPA: false }
         ]
       },
       8: {
         verified: true,
         courses: [
-          { code: "EE24831", name: "Project Work Phase II", credits: 10, type: "Project", includedInGPA: true, includedInCGPA: true }
+          { code: "U24EE801", name: "Project Work Phase II / Major Project", credits: 8, type: "Project", includedInGPA: true, includedInCGPA: true }
         ]
       }
     },
