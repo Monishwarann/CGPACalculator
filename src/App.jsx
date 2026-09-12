@@ -11,6 +11,7 @@ import PerformanceChart from "./components/PerformanceChart";
 import WhatIfCalculator from "./components/WhatIfCalculator";
 import TargetCGPACalculator from "./components/TargetCGPACalculator";
 import AdminPanelModal from "./components/AdminPanelModal";
+import Footer from "./components/Footer";
 import BackgroundMesh from "./components/BackgroundMesh";
 import ToastNotification from "./components/ToastNotification";
 
