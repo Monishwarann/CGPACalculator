@@ -11,7 +11,8 @@ import PerformanceChart from "./components/PerformanceChart";
 import WhatIfCalculator from "./components/WhatIfCalculator";
 import TargetCGPACalculator from "./components/TargetCGPACalculator";
 import AdminPanelModal from "./components/AdminPanelModal";
-import Footer from "./components/Footer";
+import BackgroundMesh from "./components/BackgroundMesh";
+import ToastNotification from "./components/ToastNotification";
 
 import { REGULATIONS, PROGRAMMES, SEMESTERS } from "./data/regulations";
 import { getCurriculum } from "./data/curriculumData";
@@ -250,26 +251,29 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen font-sans transition-colors duration-200 ${
+    <div className={`min-h-screen font-sans relative transition-colors duration-300 ${
       isDarkMode ? "bg-[#060912] text-slate-100" : "bg-slate-50 text-slate-900"
     }`}>
-      
-      {/* Toast Notification */}
-      {notification && (
-        <div className="fixed bottom-5 right-5 z-50 px-4 py-3 rounded-xl bg-indigo-600 text-white font-medium text-xs shadow-2xl shadow-indigo-500/50 animate-bounce">
-          {notification}
-        </div>
-      )}
+      {/* Ambient Radial Background Glow Layer */}
+      <BackgroundMesh isDarkMode={isDarkMode} />
 
-      {/* Top Header */}
-      <Header
+      {/* Floating Animated Toast Notification */}
+      <ToastNotification
+        notification={notification}
+        onClose={() => setNotification(null)}
         isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
-        onResetData={handleResetData}
-        onOpenAdmin={() => setIsAdminOpen(true)}
-        deferredInstallPrompt={deferredInstallPrompt}
-        onInstallApp={handleInstallApp}
       />
+
+      <div className="relative z-10">
+        {/* Top Header */}
+        <Header
+          isDarkMode={isDarkMode}
+          setIsDarkMode={setIsDarkMode}
+          onResetData={handleResetData}
+          onOpenAdmin={() => setIsAdminOpen(true)}
+          deferredInstallPrompt={deferredInstallPrompt}
+          onInstallApp={handleInstallApp}
+        />
 
       {/* Hero Section */}
       <HeroSection isDarkMode={isDarkMode} activeRegulation={activeRegulation} />
@@ -379,6 +383,7 @@ export default function App() {
       {/* Footer */}
       <Footer isDarkMode={isDarkMode} />
 
+      </div>
     </div>
   );
 }

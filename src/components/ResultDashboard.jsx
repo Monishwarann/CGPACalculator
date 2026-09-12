@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Award, TrendingUp, Percent, CheckCircle, AlertCircle, Share2, FileText, Download, BookmarkPlus } from "lucide-react";
+import { Award, TrendingUp, Percent, CheckCircle, Share2, FileText, Download, BookmarkPlus } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 export default function ResultDashboard({
   isDarkMode,
@@ -57,7 +58,7 @@ export default function ResultDashboard({
             </div>
           </div>
           <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-indigo-400 my-1">
-            {gpaResult.gpaFormatted}
+            <AnimatedCounter value={gpaResult.gpa} decimals={2} />
           </div>
           <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-indigo-500/15">
             <span>Range: 0.00 – 10.00</span>
@@ -83,7 +84,7 @@ export default function ResultDashboard({
             </div>
           </div>
           <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-violet-400 my-1">
-            {cgpaResult.cgpaFormatted}
+            <AnimatedCounter value={cgpaResult.cgpa} decimals={2} />
           </div>
           <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-violet-500/15">
             <span>Credit Weighted</span>
@@ -109,7 +110,7 @@ export default function ResultDashboard({
             </div>
           </div>
           <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-purple-400 my-1">
-            {percentageResult.percentageFormatted}
+            <AnimatedCounter value={percentageResult.percentage} decimals={2} suffix="%" />
           </div>
           <div className="text-[11px] font-bold text-slate-400 mt-3 truncate pt-2 border-t border-purple-500/15">
             {percentageResult.formulaText}
@@ -134,7 +135,7 @@ export default function ResultDashboard({
             </div>
           </div>
           <div className="text-4xl sm:text-5xl font-black font-mono tracking-tight text-emerald-400 my-1">
-            {gpaResult.totalCreditsEarned} <span className="text-base font-bold text-slate-400">/ {gpaResult.totalCreditsRegistered}</span>
+            <AnimatedCounter value={gpaResult.totalCreditsEarned} decimals={0} /> <span className="text-base font-bold text-slate-400">/ {gpaResult.totalCreditsRegistered}</span>
           </div>
           <div className="text-[11px] font-bold text-slate-400 mt-3 flex items-center justify-between pt-2 border-t border-emerald-500/15">
             <span>Reg: {gpaResult.totalCreditsRegistered} Cr</span>

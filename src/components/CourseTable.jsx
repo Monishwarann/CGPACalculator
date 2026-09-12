@@ -32,6 +32,10 @@ export default function CourseTable({
     }
   };
 
+  const filledCount = courses.filter((c) => c.grade).length;
+  const totalCount = courses.length;
+  const fillPercent = totalCount > 0 ? Math.round((filledCount / totalCount) * 100) : 0;
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 15 }}
@@ -45,7 +49,7 @@ export default function CourseTable({
     >
       
       {/* Header Controls */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
         <div>
           <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-indigo-400">
             <BookOpen className="w-4 h-4" />
@@ -106,6 +110,22 @@ export default function CourseTable({
             <RefreshCw className="w-3 h-3 inline mr-1" />
             Clear All
           </motion.button>
+        </div>
+      </div>
+
+      {/* Course Grade Completion Progress Bar */}
+      <div className="mb-6 space-y-1.5">
+        <div className="flex items-center justify-between text-xs font-bold text-slate-400">
+          <span>Semester Completion Progress</span>
+          <span className="text-indigo-400 font-mono">{filledCount} of {totalCount} Courses Graded ({fillPercent}%)</span>
+        </div>
+        <div className="w-full h-2 rounded-full bg-slate-800/80 overflow-hidden p-0.5 border border-slate-700/50">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: `${fillPercent}%` }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="h-full rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-400 shadow-sm shadow-indigo-500/50"
+          />
         </div>
       </div>
 
